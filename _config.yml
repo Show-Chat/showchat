@@ -2,3 +2,15 @@ title: ShowChat
 sass:
   sass_dir: css
   style:    compressed
+
+# The credits show up in the includes/_footer.html
+credits: '<p>Creat cu &hearts; de catre <a href="https://baiatrau.showchat.tk/">BaiatRau</a> bazat pe <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>'
+
+# Main author of the website
+# See > authors.yml
+author: Show-Chat
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+url: 'https://m.showchat.tk'
+baseurl: ''
