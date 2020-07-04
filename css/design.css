@@ -17,3 +17,103 @@ body {
     -webkit-border-radius: 10px 10px 10px 10px;
     background: #FFF;
 }
+
+/* Footer
+------------------------------------------------------------------- */
+
+#footer-content p,
+#footer-content li {
+    font-size: rem-calc(13);
+    font-weight: 300;
+}
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: $footer-bg;
+    color: $footer-color;
+    }
+
+    #footer a {
+        color: $footer-link-color;
+    }
+    #footer h4,
+    #footer h5 {
+        letter-spacing: 1px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+
+
+/* Subfooter
+------------------------------------------------------------------- */
+
+#subfooter {
+    background: $subfooter-bg;
+    color: $subfooter-color;
+    padding-top: 30px;
+}
+
+#subfooter-left ul.inline-list {
+    float: left;
+}
+
+.credits a {
+    color: $subfooter-link-color;
+    border: 0;
+    text-transform: uppercase;
+    &:hover {
+        color: #fff;
+  }
+}
+
+.social-icons {
+    margin-bottom: 10px !important;
+
+// Beware of SCSS-Syntax here
+  li {
+    padding: 0 0 20px 0;
+  }
+  a {
+    font-size: rem-calc(23);
+    display: block;
+    width: 36px;
+    border-radius: 50%;
+    color: $subfooter-bg;
+    background: $subfooter-color-social; // background: $subfooter-color;
+    text-align: center;
+    &:hover {
+      background: $subfooter-bg;
+      color: #fff;
+    }
+  }
+}
+
+
+
+/* CSS-Classes to add margin at top or bottom
+------------------------------------------------------------------- */
+
+.t10 { margin-top: 10px !important; }
+.t15 { margin-top: 15px !important; }
+.t20 { margin-top: 20px !important; }
+.t30 { margin-top: 30px !important; }
+.t50 { margin-top: 50px !important; }
+.t60 { margin-top: 60px !important; }
+.t70 { margin-top: 70px !important; }
+.t80 { margin-top: 80px !important; }
+.t90 { margin-top: 90px !important; }
+
+.b15 { margin-bottom: 15px !important; }
+.b20 { margin-bottom: 20px !important; }
+.b30 { margin-bottom: 30px !important; }
+.b60 { margin-bottom: 60px !important; }
+
+.l15 { margin-left: 15px !important; }
+.r15 { margin-right: 15px !important; }
+
+.pl20 { padding-left: 20px !important; }
+.pr5  { padding-right: 5px !important; }
+.pr10 { padding-right: 10px !important; }
+.pr20 { padding-right: 20px !important; }
