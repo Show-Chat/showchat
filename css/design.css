@@ -5,10 +5,10 @@
  */
 body {
   padding-top: 56px;
-  background: #91C9FF url(https://showchat.tk/assets/img/style-showchat.png) repeat;
+  background: #91C9FF url(/assets/img/checker.png) repeat; /* checker.png - style-showchat.png */
 }
 
-.design {
+.designed {
     padding: 2px;
     border: 2px solid #F9F9F9;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
