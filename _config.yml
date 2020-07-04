@@ -59,13 +59,3 @@ asciidoctor:
     coderay-css: style
     icons: font   
     
-#      _____
-#     / ___/____ ___________
-#     \__ \/ __ `/ ___/ ___/
-#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
-#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
-#
-
-sass:
-    sass_dir : _sass
-    style    : :compressed   
