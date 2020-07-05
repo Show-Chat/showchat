@@ -23,6 +23,9 @@ baseurl: ''
 #
 urlimg: 'https://m.showchat.tk/img/'
 
+# Chat Image
+chatimg: 'https://m.showchat.tk/assets/chat/'
+
 #      _____            _       __   __  ___         ___
 #     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
 #     \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
