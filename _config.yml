@@ -12,7 +12,7 @@ author: Show-Chat
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://m.showchat.tk'
+url: 'https://showchat.tk'
 baseurl: ''
 
 # This URL points directly to the images directory making
@@ -21,10 +21,10 @@ baseurl: ''
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://m.showchat.tk/img/'
+urlimg: 'https://showchat.tk/img/'
 
 # Chat Image
-chatimg: 'https://m.showchat.tk/assets/chat/'
+chatimg: 'https://showchat.tk/assets/chat/'
 
 #      _____            _       __   __  ___         ___
 #     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
