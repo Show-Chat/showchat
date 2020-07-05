@@ -29,6 +29,10 @@ chatimg: 'https://showchat.tk/assets/chat/'
 # WordPress RomaniaChat Image
 wp-romaniachat-img: 'https://ps.w.org/wp-romaniachat/assets/'
 
+# WordPress KiwiChat Image
+wp-kiwichat-img: 'https://ps.w.org/kiwichat/assets/'
+
+
 # CDN WP Image
 cdn-wp-img: 'https://cdn.showchat.tk/wp/'
 
