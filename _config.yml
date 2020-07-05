@@ -26,6 +26,9 @@ urlimg: 'https://showchat.tk/img/'
 # Chat Image
 chatimg: 'https://showchat.tk/assets/chat/'
 
+# WordPress RomaniaChat Image
+wp-romaniachat-img: 'https://ps.w.org/wp-romaniachat/assets/'
+
 #      _____            _       __   __  ___         ___
 #     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
 #     \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
