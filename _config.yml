@@ -37,7 +37,7 @@ wp-kiwichat-img: 'https://ps.w.org/kiwichat/assets/'
 cdn-wp-img: 'https://cdn.showchat.tk/wp/'
 
 # CDN Webmaser Image
-cdn-webmaster-img: 'https://cdn.showchat.tk/wp/'
+cdn-webmaster-img: 'https://cdn.showchat.tk/webmaster/'
 
 #      _____            _       __   __  ___         ___
 #     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
