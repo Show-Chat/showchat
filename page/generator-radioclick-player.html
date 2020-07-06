@@ -11,7 +11,7 @@ permalink: /webmaster/generator-radioclick-player
 		<div class="col-md-8">
 			<h3 class="text-light title1">Previzualizare live</h3>
 			<br>
-			<div class="myCast" id="radioclick"></div>
+			<div class="rcr" id="radioclick"></div>
 			<br><br>
 			<h3 class="text-light title1">Codul pentru site-ul dvs. web</h3>
 			<div id="codes"></div>
@@ -115,9 +115,9 @@ permalink: /webmaster/generator-radioclick-player
 	</div>
 </div>
 
-<script src="https://api.showchat.tk/radio/js/rcr.js"></script>
+<script src="https://api.showchat.tk/radioclick/js/radioclick.js"></script>
 <script>
-    $("#radioclick").myCast({
+    $("#radioclick").rcr({
 	URL: "https://rcr-cors.herokuapp.com/?q=http://live.radioclick.ro:8008",
         version: "2",
         autoplay: true
@@ -181,16 +181,16 @@ permalink: /webmaster/generator-radioclick-player
 		"<div class='card text-white bg-secondary mb-3'>" + 
 			"<div class='card-header'>Copiați și lipiți acest lucru în interior &lt;head&gt;&lt;/head&gt; din pagina dvs.</div>" +
 			"<div class='card-body' style='font-size: 14px'>" +
-				"<p class='card-text'>&lt;link href=&quothttps://api.showchat.tk/radio/css/rcr.css&quot rel=&quotstylesheet&quot type=&quottext/css&quot&gt;<br>&lt;script src=&quothttps://code.jquery.com/jquery-3.0.0.min.js&quot&gt;&lt;/script&gt;</p>" +
+				"<p class='card-text'>&lt;link href=&quothttps://api.showchat.tk/radioclick/css/radioclick.css&quot rel=&quotstylesheet&quot type=&quottext/css&quot&gt;<br>&lt;script src=&quothttps://code.jquery.com/jquery-3.0.0.min.js&quot&gt;&lt;/script&gt;</p>" +
 			"</div>" +
 		"</div>" +
 		"<div class='card text-white bg-secondary mb-3'>" + 
 			"<div class='card-header'>Copiați și lipiți acest lucru chiar în partea de jos a paginii, în interior &lt;body&gt;&lt;/body&gt;</div>" +
 			"<div class='card-body' style='font-size: 14px'>" +
-				"&lt;script src=&quothttps://api.showchat.tk/radio/js/rcr.js&quot&gt;&lt;/script&gt;" +
+				"&lt;script src=&quothttps://api.showchat.tk/radioclick/js/radioclick.js&quot&gt;&lt;/script&gt;" +
 				"<pre class='text-white'>" +
 					"&lt;script&gt; <br>" +
-					"$('#radioclick').myCast({ <br>" +
+					"$('#radioclick').rcr({ <br>" +
 					"URL: 'https://ihon.herokuapp.com/http://" + server + "', " +
 					"version: '" + type + "', " +
 					"mount_point: '" + mount + "', " +
@@ -207,7 +207,7 @@ permalink: /webmaster/generator-radioclick-player
 		"<div class='card text-white bg-secondary mb-3'>" +
 			"<div class='card-header'>Copiați și lipiți asta oriunde doriți să apară playerul</div>" +
 			"<div class='card-body'>" +
-				"&lt;div class=&quotmyCast&quot id=&quotradioclick&quot&gt;&lt;/div&gt;" +
+				"&lt;div class=&quotrcr&quot id=&quotradioclick&quot&gt;&lt;/div&gt;" +
 			"</div>" +
 		"</div>" 
 		);
