@@ -11,7 +11,7 @@ permalink: /webmaster/generator-radioclick-player
 		<div class="col-md-8">
 			<h3 class="text-light title1">Previzualizare live</h3>
 			<br>
-			<div class="myCast" id="stream1"></div>
+			<div class="myCast" id="radioclick"></div>
 			<br><br>
 			<h3 class="text-light title1">Codul pentru site-ul dvs. web</h3>
 			<div id="codes"></div>
@@ -117,7 +117,7 @@ permalink: /webmaster/generator-radioclick-player
 
 <script src="https://api.showchat.tk/radio/js/rcr.js"></script>
 <script>
-    $("#stream1").myCast({
+    $("#radioclick").myCast({
 	URL: "https://rcr-cors.herokuapp.com/?q=http://live.radioclick.ro:8008",
         version: "2",
         autoplay: true
@@ -190,7 +190,7 @@ permalink: /webmaster/generator-radioclick-player
 				"&lt;script src=&quothttps://api.showchat.tk/radio/js/rcr.js&quot&gt;&lt;/script&gt;" +
 				"<pre class='text-white'>" +
 					"&lt;script&gt; <br>" +
-					"$('#stream1').myCast({ <br>" +
+					"$('#radioclick').myCast({ <br>" +
 					"URL: 'https://ihon.herokuapp.com/http://" + server + "', " +
 					"version: '" + type + "', " +
 					"mount_point: '" + mount + "', " +
