@@ -4,3 +4,224 @@ layout: generator
 title: Generator RadioClick Player
 permalink: /webmaster/generator-radioclick-player
 ---
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<h3 class="text-light title1">Live preview</h3>
+			<br>
+			<div class="myCast" id="stream1"></div>
+			<br><br>
+			<h3 class="text-light title1">Codes for your website</h3>
+			<div id="codes"></div>
+			
+			<button type="button" class="btn btn-success btn-lg btn-block" id="generate">Generate Code</button>
+			
+		</div>		
+		<div class="col-md-4">
+		<h3 class="text-light title1">Settings</h3>
+         <!-- stream server -->
+         <input id="server" value="live.radioclick.ro:8008" type="hidden"> 
+         <!-- stream type -->
+         <input id="type" value="2" type="hidden">
+
+			<div class="form-group">
+				<label for="Is your website https?" class="text-light">Is your website https?</label>
+				<select class="form-control" id="https">
+					<option value="false" selected>No</option>
+					<option value="true">Yes</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Autoplay" class="text-light">Autoplay</label>
+				<select class="form-control" id="autoplay">
+					<option value="false" selected>No</option>
+					<option value="true">Yes</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Layout" class="text-light">Layout</label>
+				<select class="form-control" id="layout">
+					<option value="vertical">Vertical</option>
+					<option value="horizontal" selected>Horizontal</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Background color" class="text-light">Background color</label>
+				<select class="form-control" id="bg">
+					<option value="red">Red</option>
+					<option value="pink">Rose</option>
+					<option value="purple">Purple</option>
+					<option value="deeppurple">Deep Purple</option>
+					<option value="indigo">Indigo</option>
+					<option value="blue">Blue</option>
+					<option value="lightblue">Light Blue</option>
+					<option value="cyan">Cyan</option>
+					<option value="teal">Teal</option>		
+					<option value="green">Green</option>
+					<option value="lightgreen">Light Green</option>
+					<option value="lime">Lime</option>
+					<option value="yellow">Yellow</option>
+					<option value="amber">Amber</option>
+					<option value="orange">Orange</option>
+					<option value="deeporange">Deep Orange</option>
+					<option value="brown">Brown</option>
+					<option value="grey" selected>Grey</option>
+					<option value="bluegrey">Blue Grey</option>
+					<option value="black">Black</option>
+					<option value="white">White</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Play button color" class="text-light">Play button color</label>
+				<select class="form-control" id="accent">
+					<option value="red">Red</option>
+					<option value="pink">Rose</option>
+					<option value="purple">Purple</option>
+					<option value="deeppurple">Deep Purple</option>
+					<option value="indigo">Indigo</option>
+					<option value="blue">Blue</option>
+					<option value="lightblue">Light Blue</option>
+					<option value="cyan">Cyan</option>
+					<option value="teal">Teal</option>		
+					<option value="green">Green</option>
+					<option value="lightgreen">Light Green</option>
+					<option value="lime">Lime</option>
+					<option value="yellow">Yellow</option>
+					<option value="amber">Amber</option>
+					<option value="orange">Orange</option>
+					<option value="deeporange" selected>Deep Orange</option>
+					<option value="brown">Brown</option>
+					<option value="grey">Grey</option>
+					<option value="bluegrey">Blue Grey</option>
+					<option value="black">Black</option>
+					<option value="white">White</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="Blur" class="text-light">Blur</label>
+				<select class="form-control" id="blur">
+					<option value="false" selected>No</option>
+					<option value="true">Yes</option>
+				</select>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+</div>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<script src="https://api.showchat.tk/radio/js/rcr.js"></script>
+<script>
+    $("#stream1").myCast({
+	    URL: "https://rbtfm.herokuapp.com/?q=http://live.radioclick.ro:8008",
+		//URL: "https://rcr-cors.herokuapp.com/?q=http://live.radioclick.ro:8008",
+        version: "2",
+        autoplay: true
+    });
+	
+	
+	$(document).ready(function(){
+ 
+		$(".player-wpr").css('margin', '0 auto');  
+
+		$("#bg").on('change', function() {
+				var bg = $("#bg").val();
+				var accent = $("#accent").val();
+				$(".bg-wpr").attr('class', 'bg-wpr bg-' + bg + ' accent-' + accent);
+		});
+		
+		$("#accent").on('change', function() {
+				var bg = $("#bg").val();
+				var accent = $("#accent").val();
+				$(".bg-wpr").attr('class', 'bg-wpr bg-' + bg + ' accent-' + accent);
+		});
+
+		$("#layout").on('change', function() {				
+				var layout = $("#layout").val();				
+				$(".player-wpr").attr('class', 'player-wpr ' + layout);
+		});
+
+		$("#blur").on('change', function() {
+				var blur = $("#blur").val();
+				if (blur == "true"){
+					$(".blur").css('display', 'block');
+				}
+				else if (blur == "false"){
+					$(".blur").css('display', 'none');
+				}
+		});
+		
+		$("#generate").click(function () {
+		var server = $("#server").val();
+		var type = $("#type").val();
+		var mount = $("#mount").val();
+		var layout = $("#layout").val();
+		var bg = $("#bg").val();
+		var accent = $("#accent").val();
+		var blur = $("#blur").val();
+		var https = $("#https").val();
+		var autoplay = $("#autoplay").val();
+		if(type == "icecast"){
+			var mount_point = "mount_point: '" + mount + "', ";
+		}
+		else{
+			var mount_point = "";
+		}
+		if(layout == "horizontal"){
+			var layouts = "false";
+		}
+		else{
+			var layouts = "true";
+		}
+		$("#codes").html(
+		"<div class='card text-white bg-secondary mb-3'>" + 
+			"<div class='card-header'>Copy and paste this within &lt;head&gt;&lt;/head&gt; of your page</div>" +
+			"<div class='card-body' style='font-size: 14px'>" +
+				"<p class='card-text'>&lt;link href=&quothttps://api.showchat.tk/radio/css/rcr.css&quot rel=&quotstylesheet&quot type=&quottext/css&quot&gt;<br>&lt;script src=&quothttps://code.jquery.com/jquery-3.0.0.min.js&quot&gt;&lt;/script&gt;</p>" +
+			"</div>" +
+		"</div>" +
+		"<div class='card text-white bg-secondary mb-3'>" + 
+			"<div class='card-header'>Copy and paste this at the very bottom of your page, within &lt;body&gt;&lt;/body&gt;</div>" +
+			"<div class='card-body' style='font-size: 14px'>" +
+				"&lt;script src=&quothttps://api.showchat.tk/radio/js/rcr.js&quot&gt;&lt;/script&gt;" +
+				"<pre class='text-white'>" +
+					"&lt;script&gt; <br>" +
+					"$('#stream1').myCast({ <br>" +
+					"URL: 'https://ihon.herokuapp.com/http://" + server + "', " +
+					"version: '" + type + "', " +
+					"mount_point: '" + mount + "', " +
+					"vertical_layout: " + layouts + ", <br>" +
+					"bg: '" + bg + "', " +
+					"accent: '" + accent + "', " +
+					"blur: " + blur + ", " + 
+					"autoplay: " + autoplay + ", " +
+					"enable_cors: " + https + ", " +
+					"}); <br>" +
+					"&lt;/script&gt;</pre>" +
+			"</div>" +
+		"</div>" +
+		"<div class='card text-white bg-secondary mb-3'>" +
+			"<div class='card-header'>Copy and paste this wherever you want the player to appear</div>" +
+			"<div class='card-body'>" +
+				"&lt;div class=&quotmyCast&quot id=&quotstream1&quot&gt;&lt;/div&gt;" +
+			"</div>" +
+		"</div>" 
+		);
+    });
+
+	});
+</script>
