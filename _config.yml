@@ -75,3 +75,5 @@ asciidoctor:
     coderay-css: style
     icons: font   
     
+# Autor BaiatRau ( www.ShowChat.tk )
+autor: 'https://baiatrau.showchat.tk/'
