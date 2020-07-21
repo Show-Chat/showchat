@@ -4,7 +4,7 @@ sass:
   style:    compressed
 
 # The credits show up in the includes/_footer.html
-credits: '<p>Creat cu &hearts; de catre <a href="https://baiatrau.showchat.tk/">BaiatRau</a> bazat pe <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>'
+credits: '<p>Creat cu &hearts; de catre <a href="https://baiatrau.tk/">BaiatRau</a> bazat pe <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>'
 
 # Main author of the website
 # See > authors.yml
