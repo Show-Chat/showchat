@@ -175,6 +175,9 @@ permalink: /webmaster/generator-radioclick-player
 			var layouts = "true";
 		}
 		$("#codes").html(
+		"<div class='card text-white bg-secondary mb-3'>" +
+		"<div class='card-header'>Tastatura de comandă: Control (Ctrl) + C Copiați și Control (Ctrl) + V Lipire</div>" +
+		"</div>" +
 		"<div class='card text-white bg-secondary mb-3'>" + 
 			"<div class='card-header'>Copiați și lipiți acest lucru în interior &lt;head&gt;&lt;/head&gt; din pagina dvs.</div>" +
 			"<div class='card-body' style='font-size: 14px'>" +
@@ -188,7 +191,7 @@ permalink: /webmaster/generator-radioclick-player
 				"<pre class='text-white'>" +
 					"&lt;script&gt; <br>" +
 					"$('#radioclick').rcr({ <br>" +
-					"URL: 'https://proxy.screenhunt.co/http://" + server + "', " +
+					"URL: 'http://" + server + "', " +
 					"version: '" + type + "', " +
 					"mount_point: '" + mount + "', " +
 					"vertical_layout: " + layouts + ", <br>" +
