@@ -29,27 +29,27 @@ $("#lunaradio").lunaradio({
 	scroll: "true",
 	coverimage: "https://api.showchat.tk/radioclick/images/no-cover-large.gif",
 	onlycoverimage: "false",
-	coverstyle: "animated",
+	coverstyle: "circle", //circle animated square
 	usevisualizer: "real",
-	visualizertype: "7",
+	visualizertype: "4",
 	itunestoken: "1000lIPN",
-	metadatatechnic: "directly",
-	ownmetadataurl: "https://api.codetabs.com/v1/proxy?quest=http://live.radioclick.ro:8008/currentsong?sid=1",
-	streamurl: "https://api.codetabs.com/v1/proxy?quest=http://live.radioclick.ro:8008",
+	metadatatechnic: "corsproxy", // fallback directly
+	ownmetadataurl: "",
+	streamurl: "https://proxy.screenhunt.co/http://167.114.207.230:8008",
 	streamtype: "shoutcast2",
-	icecastmountpoint: "/stream",
+	icecastmountpoint: "", // /stream
 	radionomyid: "",
 	radionomyapikey: "",
 	radiojarid: "",
 	radiocoid: "sdef46f462",
-	shoutcastpath: "",
+	shoutcastpath: "/live",
 	shoutcastid: "",
 	streamsuffix: "",
 	metadatainterval: "5000",
 	volume: "100",
 	debug: "false",
 	autoplay: "true",
-	usestreamcorsproxy: "false", 
-	corsproxy: "https://cors-romaniachat.herokuapp.com/?q=",
+	usestreamcorsproxy: "false",
+	corsproxy: "https://romaniachat-cors.glitch.me/",
 });
-</script>	
+</script>
