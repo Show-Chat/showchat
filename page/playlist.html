@@ -6,7 +6,12 @@ permalink: /radioclick/playlist
   <!-- Page Content -->
   <div class="container">
 <h1 class="my-4">PlayList RadioClick Romania</h1>
-	 	<!-- radioclick player -->  
+    
+	    <!-- playlist -->
+	     <div class="card">
+	   <div class="card-body">
+      <h1 data-shoutcast-value="servertitle"></h1>
+			 	<!-- radioclick player -->  
  <div class="rcr" id="radioclick"></div> 
 <script src="https://api.showchat.tk/radioclick/js/radioclick.js"></script>
 <script> 
@@ -14,11 +19,7 @@ $('#radioclick').rcr({
 URL: 'https://www.showchat.ga/http://live.radioclick.ro:8008', version: '2', mount_point: 'undefined', vertical_layout: false, 
 bg: 'grey', accent: 'deeporange', blur: false, autoplay: false, enable_cors: false, }); 
 </script>
-	<!-- /.radioclick player -->    
-	    <!-- playlist -->
-	     <div class="card">
-	   <div class="card-body">
-      <h1 data-shoutcast-value="servertitle"></h1>
+	<!-- /.radioclick player -->   
       <p>Acuma pe RadioClick: <span data-shoutcast-value="songtitle"></span></p>
       <p>Ascultatorii: <span data-shoutcast-value="currentlisteners"></span>/<span data-shoutcast-value="maxlisteners"></span></p>
       <h2>ISTORIE - ultimele piese cantate</h2>
@@ -28,13 +29,7 @@ bg: 'grey', accent: 'deeporange', blur: false, autoplay: false, enable_cors: fal
 <!-- /.playlist -->
 	  <hr>
 	<!-- radioclick player -->  
- <div class="rcr" id="radioclick"></div> 
-<script src="https://api.showchat.tk/radioclick/js/radioclick.js"></script>
-<script> 
-$('#radioclick').rcr({ 
-URL: 'https://www.showchat.ga/http://live.radioclick.ro:8008', version: '2', mount_point: 'undefined', vertical_layout: false, 
-bg: 'grey', accent: 'deeporange', blur: false, autoplay: false, enable_cors: false, }); 
-</script>
+
 	<!-- /.radioclick player -->    
     <hr>
     <!-- Call to Action Section -->
