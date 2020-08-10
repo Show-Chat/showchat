@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head2.html %}
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
   {% include meta.html %}
   <body>
     {% include navbar.html %}
