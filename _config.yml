@@ -78,3 +78,6 @@ asciidoctor:
 # Autor BaiatRau ( www.ShowChat.tk )
 autor: 'https://baiatrau.tk/'
 baiatrau: '<p><a href="https://baiatrau.tk/">BaiatRau</a></p>'
+
+# Short bio or description (displayed in the header)
+description: ShowChat Romania intra pe cea mai mare comunitate webchat din Romania
