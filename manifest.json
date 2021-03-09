@@ -1,0 +1,44 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "ShowChat - RomaniaChat",
+    "short_name": "ShowChat - Romania",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": "https://showchat.tk/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "Comunitatea ShowChat Romania IRC Chat",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "256x256 128x128 64x64 48x48 32x32 16x16"
+        }
+    ],
+    "url": "https://showchat.tk/",
+    "screenshots": [
+        {
+            "src": "[Embedded]",
+            "sizes": "1280x800",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "750x1334",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "1280x800",
+            "type": "image/png"
+        },
+        {
+            "src": "[Embedded]",
+            "sizes": "750x1334",
+            "type": "image/png"
+        }
+    ]
+}
